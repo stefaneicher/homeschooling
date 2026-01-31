@@ -3,14 +3,18 @@
 ## ✅ Was wurde konfiguriert
 
 ### 1. Vite Konfiguration (`vite.config.ts`)
-- **Base Path** hinzugefügt: `/homeschooling/`
-- Dies stellt sicher, dass alle Assets korrekt geladen werden wenn die App unter `stefaneicher.github.io/homeschooling/` gehostet wird
+- **Base Path**: `/` (Root-Pfad für Custom Domain)
+- Dies stellt sicher, dass alle Assets korrekt geladen werden
 
 ### 2. Package.json
-- **Homepage** Feld hinzugefügt: `https://stefaneicher.github.io/homeschooling/`
+- **Homepage** Feld: `https://homeschoolling-mit-herz.ch/`
 - Dies definiert die öffentliche URL der Anwendung
 
-### 3. GitHub Actions Workflow (`.github/workflows/deploy.yml`)
+### 3. Custom Domain (`public/CNAME`)
+- **Domain**: `homeschoolling-mit-herz.ch`
+- Diese Datei wird automatisch ins Build kopiert und von GitHub Pages erkannt
+
+### 4. GitHub Actions Workflow (`.github/workflows/deploy.yml`)
 Der Workflow führt automatisch folgende Schritte aus:
 - ✓ Checkout des Codes
 - ✓ Node.js 20 Setup
@@ -34,8 +38,28 @@ Nach dem Merge dieses Pull Requests müssen Sie GitHub Pages in den Repository-E
 3. Speichern Sie die Einstellungen
 
 ### Nach dem ersten Deployment:
-- Die Website wird verfügbar sein unter: **https://stefaneicher.github.io/homeschooling/**
+- Die Website wird verfügbar sein unter: **https://homeschoolling-mit-herz.ch/**
 - Der erste Deployment kann 2-5 Minuten dauern
+
+## 🌐 DNS-Konfiguration bei METANET
+
+Konfiguriere die folgenden DNS-Einträge bei METANET:
+
+### Option A: A-Records (empfohlen für Apex-Domain)
+| Typ | Host | Ziel |
+|-----|------|------|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | stefaneicher.github.io |
+
+### Option B: Nur CNAME (für www-Subdomain)
+| Typ | Host | Ziel |
+|-----|------|------|
+| CNAME | www | stefaneicher.github.io |
+
+**Hinweis:** Die DNS-Propagierung kann bis zu 48 Stunden dauern.
 
 ## 📊 Deployment Status überwachen
 
@@ -73,7 +97,8 @@ Der Workflow benötigt folgende Permissions (bereits konfiguriert):
 
 ### Seite lädt nicht korrekt / 404 Fehler
 - Überprüfen Sie, ob GitHub Pages aktiviert ist
-- Prüfen Sie, ob der `base` Path in `vite.config.ts` korrekt ist (`/homeschooling/`)
+- Prüfen Sie, ob die Custom Domain in GitHub Pages Settings eingetragen ist
+- Prüfen Sie, ob die DNS-Einträge korrekt konfiguriert sind
 
 ### Assets laden nicht
 - Dies wird durch den `base` Path in der Vite Konfiguration gesteuert
