@@ -35,7 +35,7 @@ function App() {
             </div>
             <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={`${import.meta.env.BASE_URL}images/hero-homeschooling.jpg`}
                 alt="Homeschooling Begleitung"
                 className="w-full h-full object-cover"
               />
@@ -49,7 +49,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={`${import.meta.env.BASE_URL}images/about-portrait.jpg`}
                 alt="Anita Eicher"
                 className="w-full h-full object-cover"
               />
