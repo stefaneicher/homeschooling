@@ -203,8 +203,8 @@ function App() {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-slate-900 mb-2">E-Mail</h3>
-                  <a href="mailto:info@anita-eicher.ch" className="text-slate-600 hover:text-emerald-700 transition-colors">
-                    info@anita-eicher.ch
+                  <a href="mailto:homeschooling.mit.herz@gmail.com" className="text-slate-600 hover:text-emerald-700 transition-colors">
+                    homeschooling.mit.herz@gmail.com
                   </a>
                 </div>
               </div>
@@ -289,7 +289,7 @@ function App() {
             </div>
             <div>
               <h4 className="font-medium text-slate-900">Kontakt</h4>
-              <p>E-Mail: info@anita-eicher.ch</p>
+              <p>E-Mail: homeschooling.mit.herz@gmail.com</p>
             </div>
             <div>
               <h4 className="font-medium text-slate-900">Webdesign & Entwicklung</h4>
