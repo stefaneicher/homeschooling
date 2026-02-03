@@ -24,7 +24,7 @@ function App() {
                 <span className="text-emerald-700">mit Herz & Kompetenz</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                Individuelle Lernbegleitung für Ihr Kind – professionell, einfühlsam und auf die Bedürfnisse Ihrer Familie abgestimmt.
+              xyz  Individuelle Lernbegleitung für Ihr Kind – professionell, einfühlsam und auf die Bedürfnisse Ihrer Familie abgestimmt.
               </p>
               <a
                 href="#contact"
