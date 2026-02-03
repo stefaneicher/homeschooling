@@ -7,11 +7,11 @@
 - Dies stellt sicher, dass alle Assets korrekt geladen werden
 
 ### 2. Package.json
-- **Homepage** Feld: `https://homeschoolling-mit-herz.ch/`
+- **Homepage** Feld: `https://homeschooling-mit-herz.ch/`
 - Dies definiert die öffentliche URL der Anwendung
 
 ### 3. Custom Domain (`public/CNAME`)
-- **Domain**: `homeschoolling-mit-herz.ch`
+- **Domain**: `homeschooling-mit-herz.ch`
 - Diese Datei wird automatisch ins Build kopiert und von GitHub Pages erkannt
 
 ### 4. GitHub Actions Workflow (`.github/workflows/deploy.yml`)
