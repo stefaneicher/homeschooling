@@ -49,7 +49,9 @@ homeschooling-mit-herz.ch.      A       185.199.111.153
 www.homeschooling-mit-herz.ch.  CNAME   stefaneicher.github.io.
 ```
 
-Weitere Details zur DNS-Konfiguration siehe: [DNS_Erklaerung.md](./DNS_Erklaerung.md)
+**Weitere Dokumentation:**
+- [DNS-Erklärung](./DNS_Erklaerung.md) - Wie DNS und CNAME funktionieren
+- [DNS-Troubleshooting](./DNS_CHECK_TROUBLESHOOTING.md) - Behebung von DNS-Problemen
 
 ## 🛠 Technologie Stack
 

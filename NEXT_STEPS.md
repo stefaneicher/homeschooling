@@ -60,6 +60,8 @@ Login: https://my.metanet.ch
 
 ### DNS Check Unsuccessful (GitHub Pages)
 
+**Detaillierte Troubleshooting-Anleitung:** Siehe [DNS_CHECK_TROUBLESHOOTING.md](./DNS_CHECK_TROUBLESHOOTING.md)
+
 Wenn GitHub Pages "DNS check unsuccessful" anzeigt, prüfe folgende Punkte:
 
 #### 1. DNS-Propagierung überprüfen
