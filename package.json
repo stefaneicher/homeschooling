@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://homeschoolling-mit-herz.ch/",
+  "homepage": "https://homeschooling-mit-herz.ch/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
