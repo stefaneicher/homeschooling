@@ -32,9 +32,15 @@ npm run preview
 ## 📦 Deployment
 
 Die Anwendung wird automatisch via GitHub Actions zu GitHub Pages deployed:
-- **URL:** https://stefaneicher.github.io/homeschooling/
+- **Live URL:** https://homeschoolling-mit-herz.ch
 - **Trigger:** Jeder Push zum `main` Branch
 - **Workflow:** `.github/workflows/deploy.yml`
+
+### Domain aktivieren
+
+Um die Domain **homeschoolling-mit-herz.ch** zu aktivieren:
+- 📖 **Ausführliche Anleitung:** [METANET_DEPLOYMENT.md](./METANET_DEPLOYMENT.md)
+- ⚡ **Quick Start:** [QUICK_START.md](./QUICK_START.md)
 
 ### Manuelles Deployment
 Das Deployment kann auch manuell über die GitHub Actions Seite gestartet werden (workflow_dispatch).
