@@ -234,11 +234,108 @@ function App() {
       </section>
 
       <footer className="bg-slate-900 text-white py-12 px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-slate-400 mb-2">© 2024 Anita Eicher - Homeschooling Begleitung</p>
-          <p className="text-slate-500 text-sm">Mit Herz und Kompetenz für Ihr Kind</p>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-8">
+            <p className="text-slate-400 mb-2">© 2026 Anita Eicher - Homeschooling Begleitung</p>
+            <p className="text-slate-500 text-sm">Mit Herz und Kompetenz für Ihr Kind</p>
+          </div>
+          <div className="border-t border-slate-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <div className="text-slate-500">
+              Website erstellt von{' '}
+              <a
+                href="https://disroop.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-400 hover:text-emerald-300 transition-colors"
+              >
+                Disroop
+              </a>
+            </div>
+            <div className="flex gap-6 text-slate-500">
+              <button
+                onClick={() => document.getElementById('impressum-modal')?.classList.remove('hidden')}
+                className="hover:text-slate-300 transition-colors"
+              >
+                Impressum
+              </button>
+              <button
+                onClick={() => document.getElementById('datenschutz-modal')?.classList.remove('hidden')}
+                className="hover:text-slate-300 transition-colors"
+              >
+                Datenschutz
+              </button>
+            </div>
+          </div>
         </div>
       </footer>
+
+      {/* Impressum Modal */}
+      <div id="impressum-modal" className="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div className="bg-white rounded-2xl max-w-lg w-full max-h-[80vh] overflow-y-auto p-8">
+          <div className="flex justify-between items-start mb-6">
+            <h3 className="text-2xl font-light text-slate-900">Impressum</h3>
+            <button
+              onClick={() => document.getElementById('impressum-modal')?.classList.add('hidden')}
+              className="text-slate-400 hover:text-slate-600 text-2xl"
+            >
+              ×
+            </button>
+          </div>
+          <div className="text-slate-700 space-y-4">
+            <div>
+              <h4 className="font-medium text-slate-900">Verantwortlich für den Inhalt</h4>
+              <p>Anita Eicher</p>
+              <p>Schweiz</p>
+            </div>
+            <div>
+              <h4 className="font-medium text-slate-900">Kontakt</h4>
+              <p>E-Mail: info@anita-eicher.ch</p>
+            </div>
+            <div>
+              <h4 className="font-medium text-slate-900">Webdesign & Entwicklung</h4>
+              <p>
+                <a
+                  href="https://disroop.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-700 hover:text-emerald-800 underline"
+                >
+                  Disroop
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Datenschutz Modal */}
+      <div id="datenschutz-modal" className="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div className="bg-white rounded-2xl max-w-lg w-full max-h-[80vh] overflow-y-auto p-8">
+          <div className="flex justify-between items-start mb-6">
+            <h3 className="text-2xl font-light text-slate-900">Datenschutz</h3>
+            <button
+              onClick={() => document.getElementById('datenschutz-modal')?.classList.add('hidden')}
+              className="text-slate-400 hover:text-slate-600 text-2xl"
+            >
+              ×
+            </button>
+          </div>
+          <div className="text-slate-700 space-y-4">
+            <p>
+              Diese Website erhebt keine personenbezogenen Daten. Es werden keine Cookies verwendet
+              und kein Tracking eingesetzt.
+            </p>
+            <p>
+              Bei Kontaktaufnahme per E-Mail werden Ihre Angaben zur Bearbeitung Ihrer Anfrage
+              verwendet und nicht an Dritte weitergegeben.
+            </p>
+            <div>
+              <h4 className="font-medium text-slate-900">Hosting</h4>
+              <p>Diese Website wird auf GitHub Pages gehostet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
