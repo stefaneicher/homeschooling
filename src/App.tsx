@@ -196,8 +196,8 @@ function App() {
           </div>
 
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="flex items-start gap-4">
+            <div className="flex justify-center mb-12">
+              <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
                   <Mail className="w-6 h-6 text-emerald-700" />
                 </div>
