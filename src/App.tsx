@@ -58,14 +58,42 @@ function App() {
               <h2 className="text-4xl font-light text-slate-900 mb-6">Über mich</h2>
               <p className="text-lg text-slate-700 mb-4 leading-relaxed">
                 Mein Name ist Anita Eicher und ich begleite Familien auf ihrem Weg des Homeschoolings.
-                Mit langjähriger Erfahrung in der Pädagogik und einer Leidenschaft für individuelles Lernen
-                unterstütze ich Kinder dabei, ihr volles Potenzial zu entfalten.
+                Als wissenschaftliche Mitarbeiterin an der{' '}
+                <a
+                  href="https://www.phbern.ch/ueber-die-phbern/personen/anita-eicher"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-700 hover:text-emerald-800 underline"
+                >
+                  PH Bern
+                </a>{' '}
+                verbinde ich aktuelle Forschung mit praktischer Erfahrung.
+              </p>
+              <p className="text-lg text-slate-700 mb-4 leading-relaxed">
+                Mit einem Bachelor- und Masterdiplom als Lehrerin sowie über zwei Jahrzehnten
+                Berufserfahrung bringe ich fundiertes Fachwissen mit. Meine Expertise umfasst
+                die Arbeit mit Kindern vom Kindergarten bis zur 9. Klasse – inklusive Kinder
+                mit besonderen Bedürfnissen (KbF) und Hochbegabte.
               </p>
               <p className="text-lg text-slate-700 mb-6 leading-relaxed">
                 Jedes Kind lernt anders – und genau das macht Homeschooling so wertvoll.
                 Ich helfe Ihnen, einen strukturierten, kindgerechten Lernweg zu gestalten,
                 der Freude am Lernen weckt und gleichzeitig alle Bildungsziele erreicht.
               </p>
+              <div className="flex flex-wrap gap-3 mb-4">
+                <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">
+                  Master & Bachelor Lehramt
+                </span>
+                <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">
+                  20+ Jahre Erfahrung
+                </span>
+                <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">
+                  Hochbegabtenförderung
+                </span>
+                <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">
+                  KbF-Spezialistin
+                </span>
+              </div>
               <div className="flex items-center gap-3 text-emerald-700">
                 <Heart className="w-6 h-6" />
                 <span className="text-lg font-medium">Mit Herz und Expertise für Ihr Kind</span>

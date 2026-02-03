@@ -32,9 +32,25 @@ npm run preview
 ## 📦 Deployment
 
 Die Anwendung wird automatisch via GitHub Actions zu GitHub Pages deployed:
-- **URL:** https://stefaneicher.github.io/homeschooling/
+- **URL:** https://homeschooling-mit-herz.ch/
+- **Alternativ:** https://www.homeschooling-mit-herz.ch/
 - **Trigger:** Jeder Push zum `main` Branch
 - **Workflow:** `.github/workflows/deploy.yml`
+
+### DNS-Konfiguration
+
+Die Domain `homeschooling-mit-herz.ch` ist bei METANET konfiguriert:
+
+```dns
+homeschooling-mit-herz.ch.      A       185.199.108.153
+homeschooling-mit-herz.ch.      A       185.199.109.153
+homeschooling-mit-herz.ch.      A       185.199.110.153
+homeschooling-mit-herz.ch.      A       185.199.111.153
+www.homeschooling-mit-herz.ch.  CNAME   stefaneicher.github.io.
+```
+
+
+Siehe [DNS_Erklaerung.md](DNS_Erklaerung.md) für eine ausführliche Dokumentation.
 
 ### Manuelles Deployment
 Das Deployment kann auch manuell über die GitHub Actions Seite gestartet werden (workflow_dispatch).
