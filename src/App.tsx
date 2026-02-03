@@ -1,4 +1,4 @@
-import { BookOpen, Heart, Users, Mail, Phone, CheckCircle } from 'lucide-react';
+import { BookOpen, Heart, Users, Mail, CheckCircle } from 'lucide-react';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
                 <span className="text-emerald-700">mit Herz & Kompetenz</span>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              xyz  Individuelle Lernbegleitung für Ihr Kind – professionell, einfühlsam und auf die Bedürfnisse Ihrer Familie abgestimmt.
+                  Individuelle Lernbegleitung für Ihr Kind – professionell, einfühlsam und auf die Bedürfnisse Ihrer Familie abgestimmt.
               </p>
               <a
                 href="#contact"
@@ -209,17 +209,6 @@ function App() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-emerald-700" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-slate-900 mb-2">Telefon</h3>
-                  <a href="tel:+41791234567" className="text-slate-600 hover:text-emerald-700 transition-colors">
-                    +41 79 123 45 67
-                  </a>
-                </div>
-              </div>
             </div>
 
             <div className="bg-emerald-50 rounded-xl p-8 text-center">
