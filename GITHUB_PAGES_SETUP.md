@@ -38,7 +38,7 @@ Nach dem Merge dieses Pull Requests müssen Sie GitHub Pages in den Repository-E
 3. Speichern Sie die Einstellungen
 
 ### Nach dem ersten Deployment:
-- Die Website wird verfügbar sein unter: **https://homeschoolling-mit-herz.ch/**
+- Die Website wird verfügbar sein unter: **https://homeschooling-mit-herz.ch/**
 - Der erste Deployment kann 2-5 Minuten dauern
 
 ## 🌐 DNS-Konfiguration bei METANET

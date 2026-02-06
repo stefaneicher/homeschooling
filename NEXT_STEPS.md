@@ -1,4 +1,4 @@
-# Nächste Schritte für homeschoolling-mit-herz.ch
+# Nächste Schritte für homeschooling-mit-herz.ch
 
 ## ✅ Bereits erledigt
 
@@ -36,7 +36,7 @@ Login: https://my.metanet.ch
 ### 2. GitHub Pages Custom Domain eintragen
 
 1. Gehe zu: https://github.com/stefaneicher/homeschooling/settings/pages
-2. Unter **"Custom domain"** eingeben: `homeschoolling-mit-herz.ch`
+2. Unter **"Custom domain"** eingeben: `homeschooling-mit-herz.ch`
 3. Klicke **"Save"**
 4. Warte auf DNS-Check (grüner Haken)
 5. **"Enforce HTTPS"** aktivieren
@@ -51,8 +51,8 @@ Login: https://my.metanet.ch
 | SSL-Zertifikat | ~15-30 Minuten nach DNS |
 
 **Test-URLs nach Aktivierung:**
-- https://homeschoolling-mit-herz.ch
-- https://www.homeschoolling-mit-herz.ch
+- https://homeschooling-mit-herz.ch
+- https://www.homeschooling-mit-herz.ch
 
 ---
 
@@ -62,7 +62,7 @@ Falls die Seite nicht erreichbar ist:
 
 ```powershell
 # DNS prüfen
-nslookup homeschoolling-mit-herz.ch
+nslookup homeschooling-mit-herz.ch
 ```
 
 Erwartete Antwort: `185.199.108.153` (oder eine der anderen GitHub IPs)
