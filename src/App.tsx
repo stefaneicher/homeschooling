@@ -224,35 +224,66 @@ function App() {
 
       <footer className="bg-slate-900 text-white py-12 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-8">
-            <p className="text-slate-400 mb-2">© 2026 Anita Eicher - Homeschooling Begleitung</p>
-            <p className="text-slate-500 text-sm">Mit Herz und Kompetenz für Ihr Kind</p>
-          </div>
-          <div className="border-t border-slate-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <div className="text-slate-500">
-              Website erstellt von{' '}
-              <a
-                href="https://disroop.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-emerald-400 hover:text-emerald-300 transition-colors"
-              >
-                Disroop
-              </a>
+          {/* Two-column layout */}
+          <div className="grid md:grid-cols-2 gap-8 mb-10">
+            {/* Left: Brand and description */}
+            <div>
+              <h3 className="text-2xl font-light text-white mb-3">Anita Eicher</h3>
+              <p className="text-slate-400 mb-4 leading-relaxed">
+                Professionelle Homeschooling-Begleitung mit Herz und Kompetenz
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href="#home" className="text-slate-400 hover:text-emerald-400 transition-colors text-sm">Start</a>
+                <a href="#about" className="text-slate-400 hover:text-emerald-400 transition-colors text-sm">Über mich</a>
+                <a href="#services" className="text-slate-400 hover:text-emerald-400 transition-colors text-sm">Angebot</a>
+                <a href="#contact" className="text-slate-400 hover:text-emerald-400 transition-colors text-sm">Kontakt</a>
+              </div>
             </div>
-            <div className="flex gap-6 text-slate-500">
+
+            {/* Right: Contact with email highlight */}
+            <div className="md:text-right">
+              <h3 className="text-lg font-medium text-white mb-4">Schreiben Sie mir</h3>
+              <div className="inline-flex items-center gap-3 bg-emerald-700/10 border border-emerald-700/30 rounded-xl px-6 py-4 mb-4 hover:bg-emerald-700/20 transition-all">
+                <Mail className="w-5 h-5 text-emerald-400 flex-shrink-0" />
+                <a
+                  href="mailto:homeschooling.mit.herz@gmail.com"
+                  className="text-emerald-400 hover:text-emerald-300 transition-colors font-medium"
+                >
+                  homeschooling.mit.herz@gmail.com
+                </a>
+              </div>
+              <p className="text-slate-500 text-sm">
+                Über 20 Jahre Erfahrung • Kindergarten bis 9. Klasse
+              </p>
+            </div>
+          </div>
+
+          {/* Bottom bar */}
+          <div className="border-t border-slate-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+            <div>
+              © 2026 Anita Eicher - Homeschooling Begleitung
+            </div>
+            <div className="flex gap-6">
               <button
                 onClick={() => document.getElementById('impressum-modal')?.classList.remove('hidden')}
-                className="hover:text-slate-300 transition-colors"
+                className="hover:text-emerald-400 transition-colors"
               >
                 Impressum
               </button>
               <button
                 onClick={() => document.getElementById('datenschutz-modal')?.classList.remove('hidden')}
-                className="hover:text-slate-300 transition-colors"
+                className="hover:text-emerald-400 transition-colors"
               >
                 Datenschutz
               </button>
+              <a
+                href="https://disroop.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-emerald-400 transition-colors"
+              >
+                Disroop
+              </a>
             </div>
           </div>
         </div>
