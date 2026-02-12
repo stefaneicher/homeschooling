@@ -202,7 +202,6 @@ function App() {
                   <Mail className="w-6 h-6 text-emerald-700" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-slate-900 mb-2">E-Mail</h3>
                   <a href="mailto:homeschooling.mit.herz@gmail.com" className="text-slate-600 hover:text-emerald-700 transition-colors">
                     homeschooling.mit.herz@gmail.com
                   </a>
