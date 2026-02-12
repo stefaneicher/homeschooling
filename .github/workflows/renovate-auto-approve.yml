@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Auto-approve Renovate PRs
         # Pin to specific commit SHA for security (v4.0.0)
+        # Note: Using GITHUB_TOKEN for approval. If branch protection requires
+        # approvals from different users, configure a GitHub App or PAT instead.
         uses: hmarr/auto-approve-action@b8c17b1e5e14d2bc046cc20b3ccb550c5e6d18b2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
