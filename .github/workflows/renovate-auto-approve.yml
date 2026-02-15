@@ -1,0 +1,27 @@
+name: Auto-approve Renovate PRs
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  auto-approve:
+    runs-on: ubuntu-latest
+    # Only run for Renovate bot - verify both actor name and that it's a bot user type
+    # Renovate bot user ID is 29139614
+    if: |
+      github.actor == 'renovate[bot]' &&
+      github.event.pull_request.user.type == 'Bot' &&
+      github.event.pull_request.user.id == 29139614
+    steps:
+      - name: Auto-approve Renovate PRs
+        # Pin to specific commit SHA for security (v4.0.0)
+        # Note: Using GITHUB_TOKEN for approval. If branch protection requires
+        # approvals from different users, configure a GitHub App or PAT instead.
+        uses: hmarr/auto-approve-action@b8c17b1e5e14d2bc046cc20b3ccb550c5e6d18b2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
